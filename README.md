@@ -49,10 +49,59 @@ Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-
 
 <img src="images/screen5.png" width="400"/>
 
-## 설치 및 활용 방법
+## 설치 방법
 
-1) 첨부파일 봇 설치, 빌드
-2) WEB-UI 설치
-3) 추가 파일 업로드
-4) Lambda 설정, 펑션 연결, timeout 설정, 권한 설정, 리전 설정
-5) Dynamodb 설정 SGHelperMembers
+다음의 순서대로 SGHelper를 AWS 계정에 설치 할 수 있습니다.
+
+### 봇 설치
+
+[SGHelperLexBot.zip](https://github.com/iampizon/sghelper/blob/main/SGHelperLexBot.zip) 파일을 다운로드하고, Lex의 Bots 메뉴의 Import bot 기능으로 Bot을 설치합니다.
+
+<img src="images/screen6.png"  width="600"/>
+
+### WEB-UI 설치
+
+[aws-lex-web-ui](https://github.com/aws-samples/aws-lex-web-ui) 를 설치합니다. Cloudformation 으로 설치할 수 있으니, 원하는 리전을 선택한 후 Launch 하면 됩니다.
+<img src="images/screen7.png"  width="600"/>
+
+Stack 설정 시에 위에 생성한 Lex 봇의 정보를 입력해야합니다. LexV2BotLocaleId는 ko_KR을 입력합니다.
+
+<img src="images/screen8.png"  width="600"/>
+
+LexV2BotId는 Bot details에서, 
+
+<img src="images/screen9.png"  width="600"/>
+
+LexV2BotAliasId는 Alias 에서 각각 확인합니다. 
+
+<img src="images/screen10.png"  width="600"/>
+
+
+### Lambda 생성
+
+[SGHelperLexLambdaFunc.py](https://github.com/iampizon/sghelper/blob/main/SGHelperLexLambdaFunc.py) 파일로 Lambda 함수를 생성합니다.
+Timeout 1분으로 설정하고, EC2와 DynamoDB에 접근 권한 설정(FullAccess)을 해줍니다.
+
+### 봇에 Lambda 설정
+
+Lex Alias 에서 현재 사용중인 봇의 Alias 에서 Languages에서 "Korean(South Korea)" 링크를 클릭합니다.
+
+<img src="images/screen11.png"  width="600"/>
+
+위에 생성한 Lambda 함수를 설정해줍니다.
+
+<img src="images/screen12.png"  width="600"/>
+
+### 봇 빌드
+
+Lex bot -> Bot versions -> Korean -> Intents 화면에서 Lex bot를 빌드합니다. 몇 분 정도 소요됩니다.
+
+<img src="images/screen13.png"  width="600"/>
+
+### Dynamodb 설정 
+
+DynamoDB에 SGHelperMembers 테이블을 생성해줍니다.
+
+### 테스트
+
+Lex Intents 설정 화면에서 Test를 할 수 있습니다.
