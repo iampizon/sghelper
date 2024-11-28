@@ -14,6 +14,15 @@ SGHelper는 AWS의 AI 음성 채팅앱 빌더인 Lex를 활용하여 만든 인�
 
 Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-15b7-45f4-bbbc-17889ae64ea0
 
+## 아키텍처
+
+<img src="images/architecture.png"/>
+
+- 이 샘플앱의 WEB-UI는 S3에서 웹호스팅하고 있으며, CloudFront를 통해 접속합니다.
+- Lex는 사용자의 입력을 받아 Lambda의 API를 호출합니다.
+- python으로 구현된 Lambda API는 EC2 API를 통해 EC2 인스턴스의 정보를 가져오거나 컨트롤합니다.
+- 필요한 경우(이 샘플앱에서는 팀원 관리), DynamoDB에 데이터를 저장하거나 읽어옵니다.
+  
 ## 사용법
 
 샘플 앱 URL : https://bit.ly/sghelper
@@ -40,5 +49,6 @@ Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-
 
 <img src="images/screen5.png" width="400"/>
 
+## 설치 및 활용 방법
 
-## 설치 및 활용방법
+
