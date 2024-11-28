@@ -64,15 +64,15 @@ Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-
 [aws-lex-web-ui](https://github.com/aws-samples/aws-lex-web-ui) 를 설치합니다. Cloudformation 으로 설치할 수 있으니, 원하는 리전을 선택한 후 Launch 하면 됩니다.
 <img src="images/screen7.png"  width="600"/>
 
-Stack 설정 시에 위에 생성한 Lex 봇의 정보를 입력해야합니다. LexV2BotLocaleId는 ko_KR을 입력합니다.
+Stack 설정 시에 위에 생성한 Lex 봇의 정보를 입력해야합니다. LexV2BotLocaleId 는 ko_KR을 입력합니다.
 
 <img src="images/screen8.png"  width="600"/>
 
-LexV2BotId는 Bot details에서, 
+LexV2BotId 는 Bot details에서, 
 
 <img src="images/screen9.png"  width="600"/>
 
-LexV2BotAliasId는 Alias 에서 각각 확인합니다. 
+LexV2BotAliasId 는 Alias 에서 각각 확인합니다. 
 
 <img src="images/screen10.png"  width="600"/>
 
