@@ -32,5 +32,13 @@ Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-
 
 <img src="images/screen3.png" width="400"/>
 
-"팀원 목록"이라고 말하면 등록된 팀원의 목록을 볼 수 있습니다. 팀원 정보는 AWS서버리스 NoSQL데이터베이스인 [DynamoDB](https://aws.amazon.com/ko/pm/dynamodb)에 저장됩니다.
+"팀원 목록"이라고 말하면 등록된 팀원의 목록을 볼 수 있습니다. 팀원 정보는 DynamoDB에 저장됩니다.
+
 <img src="images/screen4.png" width="400"/>
+
+"팀원 추가"라고 말한 뒤, 이름과 이메일을 말하면 새로운 팀원을 등록할 수 있습니다. 샘플앱의 기본 언어 설정이 한국어로 되있기 때문에, 영어로 이메일을 말하면 잘 인식하지 못하는 경우가 있습니다. 이메일 입력 테스트는 텍스트로 진행합니다.
+
+<img src="images/screen5.png" width="400"/>
+
+
+## 설치 및 활용방법
