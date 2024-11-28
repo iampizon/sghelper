@@ -1,17 +1,36 @@
 # SGHelper
 
+## 소개
 SGHelper는 AWS의 AI 음성 채팅앱 빌더인 Lex를 활용하여 만든 인프라 및 조직 관리 앱 샘플입니다. 
 이 아키텍처와 샘플 소스를 응용하여, 조직 내에서 다양한 용도로 활용한 앱 개발이 가능합니다.
 
 이 샘플 앱에서 현재 지원하는 기능은 다음과 같습니다.
-1) 인스턴스 관리 : 특정 리전의 인스턴스 목록을 가져오고, 지정한 인스턴스를 시작/중단 할 수 있습니다.
-2) 인스턴스 점검 : 최근 5분간의 CPU사용량이 일정량 이상인 인스턴스들을 검색합니다. (샘플에서는 0.5%로 설정)
-3) 팀원 관리 : 등록된 팀원 명단을 가져오고, 새로운 팀원을 등록할 수 있습니다.
+- 인스턴스 관리 : 특정 리전의 인스턴스 목록을 가져오고, 지정한 인스턴스를 시작/중단 할 수 있습니다.
+- 인스턴스 점검 : 최근 5분간의 CPU사용량이 일정량 이상인 인스턴스들을 검색합니다. (샘플에서는 0.5%로 설정)
+- 팀원 관리 : 등록된 팀원 명단을 가져오고, 새로운 팀원을 등록할 수 있습니다.
 
-이 샘플 앱은 https://github.com/aws-samples/aws-lex-web-ui 에서 제공하는 WEB-UI 를 활용했습니다.
-다음 워크샵에서 이 WEB-UI의 활용법과 Lex의 사용법을 익힐 수 있습니다.
+이 샘플 앱은 [aws-lex-web-ui](https://github.com/aws-samples/aws-lex-web-ui) 에서 제공하는 WEB-UI 를 활용했습니다.
+다음 워크샵에서 이 WEB-UI의 활용법과 [Amazon Lex](https://aws.amazon.com/ko/lex/)의 사용법을 익힐 수 있습니다.
 
-Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-15b7-45f4-bbbc-17889ae64ea0/en-US
+[Lex 워크샵](https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-15b7-45f4-bbbc-17889ae64ea0/en-US)
 
-# 사용법
+## 사용법
 
+샘플 앱 URL : https://bit.ly/sghelper
+
+마이크 버튼을 누르고 말을 하거나, 텍스트를 입력하여 시작할 수 있습니다.
+"인스턴스 목록"이라고 말하면 인스턴스의 목록 정보를 가져옵니다.
+<br><br>
+<img src="images/screen1.png" width="400"/>
+
+"x번 인스턴스 시작 혹은 중단"이라고 말하면 해당 인스턴스를 시작하거나, 중단할 수 있습니다.
+(샘플앱에서는 테스트 계정에 인스턴스들을 가동 시켜 두었으니, 자유롭게 테스트가 가능합니다. 단, 다른 사용자와 명령이 겹쳐서 오작동으로 보일 수 있습니다.)
+
+<img src="images/screen2.png" width="400"/>
+
+"인스턴스 점검"이라고 말하면 최근 5분간의 CPU사용량이 일정량 이상인 인스턴스들만 검색합니다. (샘플앱에서는 검색조건을 0.5%로 조정해두었습니다.) 
+
+<img src="images/screen3.png" width="400"/>
+
+"팀원 목록"이라고 말하면 등록된 팀원의 목록을 볼 수 있습니다. 팀원 정보는 AWS서버리스 NoSQL데이터베이스인 [DynamoDB](https://aws.amazon.com/ko/pm/dynamodb)에 저장됩니다.
+<img src="images/screen4.png" width="400"/>
