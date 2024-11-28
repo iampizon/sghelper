@@ -51,4 +51,8 @@ Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-
 
 ## 설치 및 활용 방법
 
-
+1) 첨부파일 봇 설치, 빌드
+2) WEB-UI 설치
+3) 추가 파일 업로드
+4) Lambda 설정, 펑션 연결, timeout 설정, 권한 설정, 리전 설정
+5) Dynamodb 설정 SGHelperMembers
