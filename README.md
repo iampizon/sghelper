@@ -68,7 +68,7 @@ Stack 설정 시에 위에 생성한 Lex 봇의 정보를 입력해야합니다.
 
 <img src="images/screen8.png"  width="600"/>
 
-LexV2BotId 는 Bot details에서, 
+LexV2BotId 는 Bot details에서, 
 
 <img src="images/screen9.png"  width="600"/>
 
