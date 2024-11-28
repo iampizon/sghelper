@@ -12,7 +12,7 @@ SGHelper는 AWS의 AI 음성 채팅앱 빌더인 Lex를 활용하여 만든 인�
 이 샘플 앱은 [aws-lex-web-ui](https://github.com/aws-samples/aws-lex-web-ui) 에서 제공하는 WEB-UI 를 활용했습니다.
 다음 워크샵에서 이 WEB-UI의 활용법과 [Amazon Lex](https://aws.amazon.com/ko/lex/)의 사용법을 익힐 수 있습니다.
 
-[Lex 워크샵](https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-15b7-45f4-bbbc-17889ae64ea0/en-US)
+Lex 워크샵 : https://catalog.us-east-1.prod.workshops.aws/workshops/94f60d43-15b7-45f4-bbbc-17889ae64ea0
 
 ## 사용법
 
